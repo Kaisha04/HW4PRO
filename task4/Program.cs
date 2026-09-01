@@ -56,7 +56,7 @@ class Program
         foreach(var product in productsFromFile)
         {
             string currentCultureOutput = $"{product.Name} - {product.Price.ToString("C", currentCulture)} - {product.PurchaseDate.ToString(currentCulture)}";
-            string enUSCultureOutput = $"{product.Name} - {(Convert.ToDecimal(product.Price) / 43).ToString("C", enUSCulture)} - {product.PurchaseDate.ToString(enUSCulture)}";
+            string enUSCultureOutput = $"{product.Name} - {(product.Price / 43).ToString("C", enUSCulture)} - {product.PurchaseDate.ToString(enUSCulture)}";
 
             Console.WriteLine("Поточна локаль користувача:");
             Console.WriteLine(currentCultureOutput);
