@@ -12,7 +12,6 @@ class Program
     static void Main(string[] args)
     {
         {
-             File.Create(pathToCheck).Close();
             Product[] products = new Product[]
             {
                 new Product("Товар 1", 10.50m, DateTime.Now),
